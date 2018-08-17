@@ -14,7 +14,6 @@
         <button ion-item *ngFor="let book of bookList; let i = index" 
                                     (click)="onLoadBook(i)" 
                                     [color]="book.etatEmprunt ? 'dark' : 'secondary'"
-                                    [disabled]="book.etatEmprunt"
                                     >
                 {{ book.name }}
         </button>
